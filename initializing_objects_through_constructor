@@ -1,0 +1,36 @@
+class Student
+{
+    int id;
+    String name;
+    
+    //Default Constructor
+    public Student()
+    {
+        System.out.println("Student Created!");
+    }
+    
+    //Parameterized constructor
+    public Student(int id,String name)
+    {
+        this.id=id;
+        this.name=name;
+    }
+    
+    public void display()
+    {
+        System.out.println("ID: "+id);
+        System.out.println("Name: "+name);
+        
+    }
+}
+public class Test
+{
+    public static void main(String[] args)
+    {
+        Student s1=new Student();
+        s1.display();
+        
+        Student s2=new Student(1,"Shrawan");
+        s2.display();
+    }
+}
