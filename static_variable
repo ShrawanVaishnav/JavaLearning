@@ -1,0 +1,29 @@
+class Student
+{
+    
+    int id;
+    String name;
+    static String college="IIT";
+    
+    Student(int i,String n)
+    {
+        id=i;
+        name=n;
+    }
+    void display()
+    {
+        System.out.println("ID: "+id);
+        System.out.println("Name: "+name);
+        System.out.println("College: "+college);
+    }
+}
+public class Test
+{
+    public static void main(String[] args)
+    {
+        Student s1=new Student(1,"Shrawan");
+        s1.display();
+    }
+    
+    
+}
